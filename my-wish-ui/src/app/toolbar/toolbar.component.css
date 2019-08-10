@@ -1,0 +1,33 @@
+app-toolbar.app-toolbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+
+}
+
+.toolbar-external-icons-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+  margin-left: auto;
+}
+
+.app-toolbar-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  font: 500 20px/32px Roboto,"Helvetica Neue",sans-serif;
+}
+
+.primary {
+  background-color: #ffe4a5;
+}

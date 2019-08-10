@@ -1,0 +1,9 @@
+<div class="app-toolbar-row primary">
+  <span>toolbar works!</span>
+  <div class="toolbar-external-icons-container">
+    <ng-template #popContent><app-user-info-dialog></app-user-info-dialog></ng-template>
+    <button type="button" class="btn" [ngbPopover]="popContent" popoverTitle="Fancy content">
+      <fa-icon [icon]="['fab', 'github']" size=2x></fa-icon>
+    </button>
+  </div>
+</div>
