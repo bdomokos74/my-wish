@@ -19,8 +19,10 @@ export class UserInfoDialogComponent implements OnInit {
 
   public googleInit() {
     gapi.load('auth2', () => {
+
       this.auth2 = gapi.auth2.init({
-        client_id: `${GOOGLE_CLIENT_ID}`,
+        // @ts-ignore
+        client_id: GOOGLE_CLIENT_ID,
         cookiepolicy: 'single_host_origin',
         scope: 'profile email'
       });
